@@ -312,6 +312,9 @@ class DateField(DateTimeCheckMixin, Field[_ST, _GT]):
     _pyi_private_set_type: Union[str, date, Combinable]
     _pyi_private_get_type: date
     _pyi_lookup_exact_type: Union[str, date]
+
+    auto_add: bool
+    auto_now_add: bool
     def __init__(
         self,
         verbose_name: Optional[Union[str, bytes]] = ...,
@@ -339,6 +342,9 @@ class DateField(DateTimeCheckMixin, Field[_ST, _GT]):
 class TimeField(DateTimeCheckMixin, Field[_ST, _GT]):
     _pyi_private_set_type: Union[str, time, datetime, Combinable]
     _pyi_private_get_type: time
+
+    auto_add: bool
+    auto_now_add: bool
     def __init__(
         self,
         verbose_name: Optional[Union[str, bytes]] = ...,
